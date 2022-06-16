@@ -29,7 +29,7 @@ const Main = () => (
           <div className="w-full bg-gray-100 shadow-md rounded">
             <div className="p-4 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-12 border-b border-gray-300">
               <div className='w-full col-span-2'>
-                <Image className="w-42 h-42 rounded-full mx-auto shadow-xl" src="/assets/images/profile-pic.png" alt="" width="384" height="512" />
+                <img className="w-42 h-42 rounded-full mx-auto shadow-xl" src="/assets/images/profile-pic.png" alt="" width="384" height="384" />
               </div>
               <div className='w-auto ml-5 col-span-7'>
                 <div>
