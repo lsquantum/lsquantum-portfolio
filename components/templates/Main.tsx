@@ -126,31 +126,83 @@ const Main = () => (
                 Timeline
               </div>
             </div>
-            <div className='mx-14 mb-5 grid grid-cols-10 gap-0'>
-              <div className='ml-3 mr-7 col-span-2 border-b-4 border-gray-500 font-semibold hover:text-gray-700 hover:cursor-pointer'>
-                Ventura Yazılım
+            <div className='w-auto mx-8'>
+              <div className='w-auto'>
+                <div className='w-64 ml-3 inline-block border-b-4 border-green-600'>
+                  <span className='inline-block w-auto text-sm font-medium'>
+                    Ventura Yazılım A.Ş
+                  </span>
+                </div>
               </div>
-              <div className='-ml-5 mr-10 col-span-2 border-b-4 border-gray-500 font-semibold hover:text-gray-700 hover:cursor-pointer'>
-                Military Service
+              <div className='w-auto'>
+                <div className='w-64 inline-block'>
+                </div>
+                <div className='w-64 ml-4 inline-block border-b-4 border-gray-900'>
+                  <span className='inline-block w-auto text-sm font-medium'>
+                    Türk Silahlı Kuvvetleri
+                  </span>
+                </div>
               </div>
-              <div className='-ml-8 -mr-6 col-span-3 border-b-4 border-gray-500 font-semibold hover:text-gray-700 hover:cursor-pointer'>
-                Ventura Yazılım
+              <div className='w-auto'>
+                <div className='w-80 inline-block'>
+                </div>
+                <div className='w-4/12 ml-56 inline-block border-b-4 border-blue-900'>
+                  <span className='inline-block w-auto text-sm font-medium'>
+                    Ventura Yazılım A.Ş
+                  </span>
+                </div>
               </div>
-              <div className='ml-7 mr-12 col-span-2 border-b-4 border-gray-500 font-semibold hover:text-gray-700 hover:cursor-pointer'>
-                DIAS Teknoloji
+              <div className='w-auto'>
+                <div className='w-96 inline-block'>
+                </div>
+                <div className='w-80 inline-block'>
+                </div>
+                <div className='w-36 ml-60 inline-block border-b-4 border-purple-700'>
+                  <span className='inline-block w-auto text-sm font-medium'>
+                    DIAS Teknoloji
+                  </span>
+                </div>
               </div>
-              <div className='-ml-10 col-span-1 border-b-4 border-gray-500 font-semibold hover:text-gray-700 hover:cursor-pointer'>
-                NETAŞ
+              <div className='w-auto'>
+                <div className='w-96 inline-block'>
+                </div>
+                <div className='w-96 inline-block'>
+                </div>
+                <div className='w-24 ml-80 inline-block border-b-4 border-blue-500'>
+                  <span className='inline-block w-auto text-sm font-medium'>
+                    NETAŞ
+                  </span>
+                </div>
+              </div>
+              <div className='m-2'>
+                <div className="'w-auto border-t-2 border-gray-600"></div>
+                <div className="w-full">
+                  <div className='w-1/4 inline-block'>
+                    <span className='font-medium'>2017</span>
+                  </div>
+                  <div className='w-1/4 inline-block'>
+                    <span className='font-medium'>2019</span>
+                  </div>
+                  <div className='w-1/4 inline-block'>
+                    <span className='font-medium'>2020</span>
+                  </div>
+                  <div className='w-1/4 inline-block'>
+                    <span className='font-medium'>2021</span>
+                    <span className='float-right font-medium'>Present</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className='mx-14 border-t border-gray-600'>
-            </div>
-            <div className='mx-14 grid grid-cols-5 gap-0'>
-              <div><p className=''>2017</p></div>
-              <div>2019</div>
-              <div>2020</div>
-              <div>2021</div>
-              <div className='grid grid-cols-2'><div>2022</div><div className='text-right'>Present</div>
+          </div>
+          <div className="w-auto bg-gray-100 shadow-md rounded">
+            <div className='flex flex-nowrap'>
+              <div className='my-3 ml-4 mr-2'>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div className='my-3 text-xl font-bold tex'>
+                Work Experience
               </div>
             </div>
           </div>
