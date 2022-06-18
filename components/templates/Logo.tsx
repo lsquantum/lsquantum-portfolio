@@ -10,7 +10,7 @@ const Logo = (props: ILogoProps) => {
     : 'font-semibold text-xl';
 
   return (
-    <span className={`text-gray-900 inline-flex items-center ${fontStyle}`}>
+    <span className={`text-gray-900 dark:text-gray-100 inline-flex items-center ${fontStyle}`}>
       <div className='mr-2'>
         <img
           className='w-16 h-16'
