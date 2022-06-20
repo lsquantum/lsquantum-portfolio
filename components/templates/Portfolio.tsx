@@ -1,6 +1,6 @@
 import { Meta } from '../layout/Meta';
-import { AppConfig } from '../../utils/AppConfig';
-import { Footer } from './Footer';
+import { AppConfig } from '../../config/AppConfig';
+import { Footer } from '../footer/Footer';
 import dynamic from 'next/dynamic';
 
 const Main = dynamic(
@@ -8,7 +8,7 @@ const Main = dynamic(
   { ssr: false }
 )
 
-const Base = () => (
+const Portfolio = () => (
   <div className="antialiased text-gray-900 dark:text-gray-100">
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Main />
@@ -16,4 +16,4 @@ const Base = () => (
   </div>
 );
 
-export { Base };
+export { Portfolio };
