@@ -1,13 +1,14 @@
-import { AppConfig } from "../../config/AppConfig";
+import useLanguage from "../../hooks/useLanguage";
 import { ExperienceIcon } from "../icons/Icon";
 
 function ExperienceInfo() {
+    const [languageItems] = useLanguage();
     return (
         <div>
             <div className='flex flex-nowrap'>
                 <ExperienceIcon />
                 <div className='mt-1 ml-2'>
-                    <p>{AppConfig.totalExp} of experience</p>
+                    <p>{languageItems.totalExp}</p>
                 </div>
             </div>
         </div>

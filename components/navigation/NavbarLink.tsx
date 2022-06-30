@@ -9,7 +9,7 @@ interface NavbarLinkProps {
 function NavbarLink(props: NavbarLinkProps) {
     return (
         <>
-            <div className='mr-5 dark:text-gray-100'>
+            <div className='mr-4 dark:text-gray-100'>
                 <Link rel="noopener noreferrer" href={props.link}>
                     <a target="_blank">{props.text}</a>
                 </Link>

@@ -1,16 +1,17 @@
-import { AppConfig } from "../../config/AppConfig";
+import useLanguage from "../../hooks/useLanguage";
 import { EducationIcon, WorkExperienceIcon } from "../icons/Icon";
 import Title from "../title/Title";
 import WorkExperienceItem from "../workexperience/WorkExperienceItem";
 
 function WorkExperienceSection() {
+    const [languageItems] = useLanguage();
     return (
         <>
             <div className='flex flex-nowrap'>
                 <WorkExperienceIcon />
-                <Title text={'Work Experience'} />
+                <Title text={languageItems.workExperienceTitle} />
             </div>
-            {AppConfig.experince.sort(function (a: any, b: any) {
+            {languageItems.experince.sort(function (a: any, b: any) {
                 return a.order - b.order
             }).map((item, i) => {
                 return (

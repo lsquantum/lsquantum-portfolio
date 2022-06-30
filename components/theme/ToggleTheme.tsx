@@ -9,16 +9,16 @@ function ToggleTheme() {
         setDarkMode((prev) => !prev);
     }
     return (
-        <div className="mt-1 ml-auto flex justify-end shadow-xl">
+        <div className="mt-1 ml-auto flex justify-end border-gray-300">
             <div
-                className="w-12 rounded-full h-6 bg-gray-400 cursor-pointer flex items-center px-1/2 relative select-none"
+                className="h-7 w-12 rounded-full bg-gray-300 dark:bg-[#292929] cursor-pointer flex items-center relative select-none border-gray-300 border"
                 onClick={toggleTheme}
             >
                 <div
-                    className={`${darkMode ? 'translate-x-0' : 'translate-x-6'} h-6 w-6 bg-white hover:border-gray-500 hover:border rounded-full transform transition-transform duration-300`}
+                    className={`${darkMode ? 'translate-x-0' : 'translate-x-[1.4rem]'} h-6 w-6 dark:bg-[#292929] dark:hover:bg-[#242424] border bg-white hover:border-gray-500 hover:border rounded-full transform transition-transform duration-300`}
                 />
                 <span
-                    className={`text-center text-sm flex-shrink mt-5 ml-auto absolute -translate-y-1/2 ${darkMode ? 'right-1 mr-1/4' : 'left-1 ml-1/4'}`}
+                    className={`text-center text-sm flex-shrink ml-auto absolute ${darkMode ? 'right-1 mr-1/4' : 'left-1 ml-1/4'}`}
                     role="img"
                     aria-label="theme emoji"
                 >

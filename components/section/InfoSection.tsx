@@ -1,4 +1,4 @@
-import { AppConfig } from "../../config/AppConfig";
+import useLanguage from "../../hooks/useLanguage";
 import ProfileImage from "../image/ProfileImage";
 import BaseInfo from "../info/BaseInfo";
 import BirthDayInfo from "../info/BirthDayInfo";
@@ -12,15 +12,16 @@ import ItemWrapper from "../wrappers/ItemWrapper";
 import SkillsWrapper from "../wrappers/SkillsWrapper";
 
 function InfoSection() {
+    const [languageItems] = useLanguage();
     return (
         <ItemWrapper>
             <div className="p-4 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-12 border-b border-gray-500">
                 <ProfileImage src={'/assets/images/profile-pic.png'} />
                 <div className='w-auto ml-5 col-span-7'>
-                    <p className='font-bold text-2xl text-blue-600'>{AppConfig.fullname}</p>
-                    <p className='font-semibold text-xl'>{AppConfig.jobTitle}</p>
+                    <p className='font-bold text-2xl text-blue-600'>{languageItems.fullname}</p>
+                    <p className='font-semibold text-xl'>{languageItems.jobTitle}</p>
                     <div className='mt-3 ml-3'>
-                        {AppConfig.info.map((item, i) => {
+                        {languageItems.info.map((item, i) => {
                             return (
                                 <BaseInfo
                                     key={i}
@@ -30,7 +31,7 @@ function InfoSection() {
                         })}
                     </div>
                     <SkillsWrapper>
-                        {AppConfig.skills.map((item, i) => {
+                        {languageItems.skills.map((item, i) => {
                             return (
                                 <Skill
                                     key={i}

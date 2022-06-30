@@ -8,6 +8,7 @@ interface SideProjectItemProps {
     team?: string;
     info?: string;
     tools?: string[];
+    link?: string;
 }
 
 function SideProjectItem(props: SideProjectItemProps) {
@@ -39,6 +40,12 @@ function SideProjectItem(props: SideProjectItemProps) {
                     })}
                 </ExperienceSkillsWrapper>
             }
+            {
+                props.link &&
+                <div className='mt-3'>
+                    <a href={props.link} target="_blank" className="text-blue-600 no-underline hover:underline ...">{props.link}</a>
+                </div>
+            }
         </div>
     );
 }
@@ -52,6 +59,7 @@ SideProjectItem.defaultProps = {
     info: undefined,
     team: undefined,
     tools: undefined,
+    link: undefined,
 };
 
 export default SideProjectItem;

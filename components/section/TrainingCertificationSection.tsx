@@ -1,16 +1,17 @@
-import { AppConfig } from "../../config/AppConfig";
+import useLanguage from "../../hooks/useLanguage";
 import { TrainingCertificationIcon } from "../icons/Icon";
 import Title from "../title/Title";
 import TrainingCertificationItem from "../trainingcertification/TrainingCertificationItem";
 
 function TrainingCertificationSection() {
+    const [languageItems] = useLanguage();
     return (
         <>
             <div className='flex flex-nowrap'>
                 <TrainingCertificationIcon />
-                <Title text={'Trainings and Certifications'} />
+                <Title text={languageItems.trainingsCertificationsTitle} />
             </div>
-            {AppConfig.trainingCertification.sort(function (a: any, b: any) {
+            {languageItems.trainingCertification.sort(function (a: any, b: any) {
                 return a.order - b.order
             }).map((item, i) => {
                 return (

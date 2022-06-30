@@ -1,10 +1,12 @@
-import { AppConfig } from '../../config/AppConfig';
+import useLanguage from '../../hooks/useLanguage';
 
 type ILogoProps = {
   xl?: boolean;
 };
 
 const Logo = (props: ILogoProps) => {
+  const [languageItems] = useLanguage();
+
   const fontStyle = props.xl
     ? 'font-bold text-2xl'
     : 'font-semibold text-xl';
@@ -18,7 +20,7 @@ const Logo = (props: ILogoProps) => {
         />
       </div>
       <div className='hidden sm:block'>
-        {AppConfig.site_name}
+        {languageItems.site_name}
       </div>
     </span>
   );

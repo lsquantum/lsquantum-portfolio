@@ -1,10 +1,12 @@
-import { AppConfig } from '../../config/AppConfig';
+import useLanguage from "../../hooks/useLanguage";
 
-const FooterCopyright = () => (
-  <div className="footer-copyright">
-    © Copyright {new Date().getFullYear()} <a href={AppConfig.authorLink}>{AppConfig.author}</a>
-    <style jsx>
-      {`
+const FooterCopyright = () => {
+  const [languageItems] = useLanguage();
+  return (
+    <div className="footer-copyright">
+      © Copyright {new Date().getFullYear()} <a href={languageItems.authorLink}>{languageItems.author}</a>
+      <style jsx>
+        {`
         .footer-copyright :global(a) {
           @apply text-primary-500;
         }
@@ -13,8 +15,8 @@ const FooterCopyright = () => (
           @apply underline;
         }
       `}
-    </style>
-  </div>
-);
-
+      </style>
+    </div>
+  );
+}
 export { FooterCopyright };

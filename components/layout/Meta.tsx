@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 import { AppConfig } from '../../config/AppConfig';
+import useLanguage from '../../hooks/useLanguage';
 
 type IMetaProps = {
   title: string;
@@ -12,7 +13,7 @@ type IMetaProps = {
 
 const Meta = (props: IMetaProps) => {
   const router = useRouter();
-
+  const [languageItems] = useLanguage();
   return (
     <>
       <Head>
@@ -55,8 +56,8 @@ const Meta = (props: IMetaProps) => {
           title: props.title,
           description: props.description,
           url: props.canonical,
-          locale: AppConfig.locale,
-          site_name: AppConfig.site_name,
+          locale: languageItems.locale,
+          site_name: languageItems.site_name,
         }}
       />
     </>

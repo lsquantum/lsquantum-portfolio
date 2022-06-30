@@ -1,12 +1,13 @@
-import { AppConfig } from "../../config/AppConfig";
+import useLanguage from "../../hooks/useLanguage";
 import { LocationIcon } from "../icons/Icon";
 
 function LocationInfo() {
+    const [languageItems] = useLanguage();
     return (
         <div className='flex flex-nowrap'>
             <LocationIcon />
             <div className='mt-1 ml-2'>
-                <p>{AppConfig.location}</p>
+                <p>{languageItems.location}</p>
             </div>
         </div>
     );

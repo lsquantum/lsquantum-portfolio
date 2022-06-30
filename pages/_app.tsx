@@ -5,4 +5,4 @@ function Portfolio({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />
 }
 
-export default Portfolio
+export default Portfolio;
