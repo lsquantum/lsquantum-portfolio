@@ -2,7 +2,6 @@ import { NextSeo } from 'next-seo';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-import { AppConfig } from '../../config/AppConfig';
 import useLanguage from '../../hooks/useLanguage';
 
 type IMetaProps = {
